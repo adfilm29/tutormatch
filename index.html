@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="TutorMatch helps students discover teachers by subject, teaching style and availability.">
+<title>TutorMatch — Find your learning match</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:#182033;background:#f5f7fb;font-synthesis:none}*{box-sizing:border-box}body{margin:0}.wrap{max-width:1100px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;align-items:center;gap:14px}.brand{font-weight:850;font-size:1.2rem;letter-spacing:-.04em}.brand span{color:#6b5cff}.tag{font-size:.78rem;color:#5e6680;background:#ebeaff;padding:7px 11px;border-radius:99px}.hero{margin:34px 0 24px;padding:36px;border-radius:26px;background:linear-gradient(120deg,#171b3a,#4540a6);color:white}.hero h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.05;letter-spacing:-.05em;margin:8px 0 12px}.hero p{max-width:650px;color:#e0e2ff}.filters{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;margin:22px 0}.field,select{width:100%;padding:13px 14px;border:1px solid #dce1ed;border-radius:12px;background:white;font:inherit;color:#182033}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:16px}.teacher{background:white;border:1px solid #e2e6f0;border-radius:18px;padding:20px;box-shadow:0 8px 24px #25345a0a}.avatar{width:54px;height:54px;border-radius:16px;background:#eeecff;color:#5145c5;display:grid;place-items:center;font-size:1.25rem;font-weight:800}.row{display:flex;gap:12px;align-items:center}.teacher h3{margin:0;font-size:1.08rem}.muted{color:#68718a;font-size:.9rem}.pill{display:inline-block;background:#f0efff;color:#5145c5;border-radius:99px;padding:5px 9px;font-size:.78rem;margin:4px 4px 0 0}.style{font-size:.9rem;margin:13px 0;color:#39425a;min-height:42px}.btn{border:0;border-radius:11px;padding:11px 14px;background:#5549d8;color:white;font-weight:700;cursor:pointer;font:inherit}.btn.secondary{background:#efeff8;color:#38345f}.btn:focus,input:focus,select:focus{outline:3px solid #bdb8ff;outline-offset:2px}.teacher .btn{width:100%;margin-top:14px}.empty{text-align:center;padding:40px;color:#68718a;grid-column:1/-1}.notice{margin:22px 0;padding:14px 16px;border-left:4px solid #6b5cff;background:#eeedff;border-radius:10px;color:#41466b;font-size:.9rem}.modal{position:fixed;inset:0;background:#11182b99;display:none;place-items:center;padding:18px}.modal.open{display:grid}.dialog{width:min(100%,480px);background:white;border-radius:20px;padding:24px;max-height:90vh;overflow:auto}.dialog h2{margin-top:0}.dialog label{display:block;font-size:.88rem;font-weight:650;margin:12px 0 6px}.dialog .field{margin-bottom:4px}.actions{display:flex;gap:10px;margin-top:18px}.actions>*{flex:1}.foot{padding:25px 0;color:#737b91;font-size:.82rem;text-align:center}@media(max-width:650px){.filters{grid-template-columns:1fr}.hero{padding:26px}.top{align-items:flex-start;flex-direction:column}}
+
+.community{margin:34px 0 20px}.community-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap}.community-head h2{margin:0}.community-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:18px;margin-top:16px}.feed{display:grid;gap:14px}.post{background:white;border:1px solid #e2e6f0;border-radius:16px;padding:18px}.post-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.post h3{margin:12px 0 6px;font-size:1.05rem}.post p{color:#39425a;white-space:pre-wrap;overflow-wrap:anywhere}.post-meta{font-size:.8rem;color:#7a8298}.post-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.post-actions button{border:0;background:#f0efff;color:#5145c5;border-radius:9px;padding:8px 11px;cursor:pointer;font:inherit;font-size:.86rem}.comments{border-top:1px solid #edf0f6;margin-top:14px;padding-top:12px}.comment{font-size:.88rem;color:#4c556c;margin:8px 0}.comment-form{display:flex;gap:8px;margin-top:10px}.comment-form input{min-width:0;flex:1;padding:10px;border:1px solid #dce1ed;border-radius:9px;font:inherit}.compose,.community-side{background:white;border:1px solid #e2e6f0;border-radius:16px;padding:18px}.compose h3,.community-side h3{margin:0 0 12px}.compose label{display:block;font-size:.85rem;font-weight:650;margin:10px 0 5px}.compose textarea{min-height:105px;resize:vertical}.compose .btn{width:100%;margin-top:10px}.community-side p{font-size:.9rem;color:#68718a}.community-side ul{padding-left:18px;color:#59627a;font-size:.88rem}.feed-empty{padding:30px;text-align:center;color:#68718a;background:white;border:1px dashed #cbd2e1;border-radius:14px}.community-tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.community-tools select{max-width:220px}.community-note{font-size:.8rem;color:#737b91;margin-top:12px}@media(max-width:760px){.community-layout{grid-template-columns:1fr}.community-side{order:2}}
+</style>
+</head>
+<body><div class="wrap">
+<div class="top"><div class="brand">Campus<span>Forge</span> / TutorMatch</div><div class="tag">STUDENT–TEACHER DISCOVERY</div></div>
+<section class="hero"><div class="tag">LEARN WITH THE RIGHT GUIDE</div><h1>Find a teacher who<br>fits your learning style.</h1><p>Explore educator profiles, compare subjects and teaching approaches, and send a study request. Better learning starts with the right academic connection.</p></section>
+<div class="row" style="justify-content:space-between;flex-wrap:wrap"><div><h2 style="margin:0">Discover educators</h2><div class="muted">Demo profiles · Use filters to find a good academic fit</div></div><button class="btn secondary" id="reset">Reset filters</button></div>
+<div class="filters"><input class="field" id="search" placeholder="Search teacher or subject…" aria-label="Search teacher or subject"><select id="subject" aria-label="Filter by subject"><option value="">All subjects</option><option>Mathematics</option><option>Physics</option><option>Chemistry</option><option>Biology</option><option>Computer Science</option><option>English</option></select><select id="styleFilter" aria-label="Filter by teaching style"><option value="">All teaching styles</option><option>Concept-first</option><option>Practice-focused</option><option>Visual learning</option><option>Exam preparation</option></select></div>
+<div class="grid" id="teachers" aria-live="polite"></div>
+
+<section class="community">
+ <div class="community-head"><div><div class="tag">STUDENT COMMONS</div><h2>Ideas grow when students connect.</h2><div class="muted">Share knowledge, find collaborators and discuss useful topics.</div></div></div>
+ <div class="community-tools"><select id="communityFilter" aria-label="Filter discussions"><option value="">All discussions</option><option>Study Help</option><option>Projects & Hackathons</option><option>Technology & Coding</option><option>Career & Internships</option><option>Campus Ideas</option><option>Wellbeing & Productivity</option></select><span class="muted" id="postCount"></span></div>
+ <div class="community-layout">
+  <div class="feed" id="communityFeed" aria-live="polite"></div>
+  <aside>
+   <form class="compose" id="postForm"><h3>Start a discussion</h3>
+    <label for="postAuthor">Display name</label><input class="field" id="postAuthor" required maxlength="35" placeholder="Your first name or nickname">
+    <label for="postCategory">Topic</label><select id="postCategory" class="field" required><option>Study Help</option><option>Projects & Hackathons</option><option>Technology & Coding</option><option>Career & Internships</option><option>Campus Ideas</option><option>Wellbeing & Productivity</option></select>
+    <label for="postTitle">Discussion title</label><input class="field" id="postTitle" required maxlength="90" placeholder="What would you like to discuss?">
+    <label for="postBody">Your message</label><textarea class="field" id="postBody" required maxlength="1200" placeholder="Share a question, resource, idea or experience…"></textarea>
+    <button class="btn" type="submit">Publish discussion</button>
+   </form>
+   <div class="community-side" style="margin-top:14px"><h3>Community principles</h3><ul><li>Be respectful and constructive.</li><li>Share useful, accurate learning resources.</li><li>Give feedback without personal attacks.</li><li>Do not post private contact details.</li><li>Report harmful or inappropriate content to moderators in a real deployment.</li></ul><p>Build a community that helps everyone learn, create and progress.</p></div>
+  </aside>
+ </div>
+ <div class="community-note">Prototype notice: discussions, likes and comments are stored only in this browser. They are not shared with other students or synced to a server yet.</div>
+</section>
+<div class="notice"><b>Academic-use policy:</b> TutorMatch is for legitimate study support only. Requests should relate to lessons, tutoring or academic mentoring. No dating, romantic messaging or personal contact exchange. In a real deployment, teacher identities, qualifications, availability and safeguarding procedures must be verified by the institution.</div>
+<div class="foot">CampusForge learning prototype · Sample profiles are fictional · Requests are saved only in this browser</div>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><div class="dialog"><h2 id="dialogTitle">Send a study request</h2><p class="muted" id="selectedTeacher"></p><form id="requestForm"><label for="studentName">Your name</label><input class="field" id="studentName" required maxlength="60" placeholder="Student name"><label for="studentEmail">College email (demo only)</label><input class="field" id="studentEmail" type="email" required placeholder="you@example.edu"><label for="topic">What do you want to study?</label><input class="field" id="topic" required maxlength="100" placeholder="e.g. Java loops and arrays"><label for="message">Study goals / questions</label><textarea class="field" id="message" rows="3" maxlength="400" placeholder="Briefly describe what you need help with"></textarea><div class="actions"><button type="button" class="btn secondary" id="cancel">Cancel</button><button class="btn" type="submit">Save request</button></div></form></div></div>
+<script>
+const educators=[
+{id:1,name:"Dr. Aanya Sharma",subject:"Mathematics",style:"Concept-first",detail:"Builds strong fundamentals with clear, step-by-step explanations.",experience:"8 years",mode:"Small group / one-to-one"},
+{id:2,name:"Mr. Rohan Verma",subject:"Computer Science",style:"Practice-focused",detail:"Learn programming by solving problems and reviewing code together.",experience:"6 years",mode:"Lab sessions"},
+{id:3,name:"Ms. Meera Khan",subject:"Biology",style:"Visual learning",detail:"Uses diagrams, models and concept maps to explain complex topics.",experience:"7 years",mode:"Small group"},
+{id:4,name:"Dr. Kabir Singh",subject:"Physics",style:"Exam preparation",detail:"Connects core concepts to numericals and exam-style questions.",experience:"10 years",mode:"Small group / one-to-one"},
+{id:5,name:"Ms. Nisha Gupta",subject:"Chemistry",style:"Concept-first",detail:"Makes reactions and mechanisms easier through structured notes.",experience:"5 years",mode:"One-to-one"},
+{id:6,name:"Mr. Arjun Das",subject:"English",style:"Practice-focused",detail:"Focuses on writing, grammar, comprehension and communication.",experience:"4 years",mode:"Workshop"}
+];
+const $=id=>document.getElementById(id);let selected=null;
+function render(){const q=$("search").value.trim().toLowerCase(),s=$("subject").value,t=$("styleFilter").value;const list=educators.filter(x=>(!s||x.subject===s)&&(!t||x.style===t)&&(!q||(x.name+" "+x.subject+" "+x.detail).toLowerCase().includes(q)));$("teachers").innerHTML=list.length?list.map(x=>'<article class="teacher"><div class="row"><div class="avatar">'+x.name.split(" ").slice(1).map(y=>y[0]).join("").slice(0,2)+'</div><div><h3>'+x.name+'</h3><div class="muted">'+x.subject+' · '+x.experience+'</div></div></div><div><span class="pill">'+x.style+'</span><span class="pill">'+x.mode+'</span></div><p class="style">'+x.detail+'</p><button class="btn" data-id="'+x.id+'">Request a study session</button></article>').join(""):'<div class="empty">No educators match those filters. Try another subject or teaching style.</div>';document.querySelectorAll("[data-id]").forEach(b=>b.addEventListener("click",()=>openRequest(Number(b.dataset.id))))}
+function openRequest(id){selected=educators.find(x=>x.id===id);$("selectedTeacher").textContent=selected.name+" · "+selected.subject;$("modal").classList.add("open");$("studentName").focus()}
+function close(){ $("modal").classList.remove("open");$("requestForm").reset()}
+["search","subject","styleFilter"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));$("reset").onclick=()=>{$("search").value="";$("subject").value="";$("styleFilter").value="";render()};$("cancel").onclick=close;$("modal").addEventListener("click",e=>{if(e.target===$("modal"))close()});
+$("requestForm").addEventListener("submit",e=>{e.preventDefault();const requests=JSON.parse(localStorage.getItem("tutormatch-requests")||"[]");requests.push({teacher:selected.name,subject:selected.subject,student:$("studentName").value,email:$("studentEmail").value,topic:$("topic").value,message:$("message").value,createdAt:new Date().toISOString(),status:"Demo request"});localStorage.setItem("tutormatch-requests",JSON.stringify(requests));close();alert("Study request saved in this browser. This demo does not send it to the teacher.");});
+
+const communityKey="tutormatch-community-v1";
+const initialPosts=[
+{id:1,author:"CampusForge Community",category:"Projects & Hackathons",title:"What are you building this semester?",body:"Share your current project idea, the problem it solves and the skills you want to practise. You may find a teammate here.",createdAt:new Date(Date.now()-3600000).toISOString(),likes:2,comments:[{author:"Student",body:"I am exploring a campus navigation app."}]},
+{id:2,author:"CampusForge Community",category:"Technology & Coding",title:"Which coding concept took you the longest to understand?",body:"Loops, pointers, recursion, OOP or something else? Share how you finally understood it so juniors can learn from your experience.",createdAt:new Date(Date.now()-7200000).toISOString(),likes:1,comments:[]}
+];
+function loadPosts(){try{const saved=JSON.parse(localStorage.getItem(communityKey));return Array.isArray(saved)?saved:initialPosts}catch{return initialPosts}}
+let communityPosts=loadPosts();
+function persistPosts(){localStorage.setItem(communityKey,JSON.stringify(communityPosts))}
+function safeText(tag,text,className){const el=document.createElement(tag);if(className)el.className=className;el.textContent=text;return el}
+function renderCommunity(){
+ const feed=$("communityFeed"),filter=$("communityFilter").value;feed.replaceChildren();
+ const posts=communityPosts.filter(p=>!filter||p.category===filter).sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
+ $("postCount").textContent=communityPosts.length+" discussions";
+ if(!posts.length){feed.append(safeText("div","No discussions in this topic yet. Start one and invite others to contribute.","feed-empty"));return}
+ posts.forEach(post=>{
+  const card=safeText("article","","post"),top=safeText("div","","post-top");
+  top.append(safeText("span",post.category,"pill"),safeText("span",new Date(post.createdAt).toLocaleString(),"post-meta"));card.append(top);
+  card.append(safeText("h3",post.title),safeText("div","Posted by "+post.author,"post-meta"),safeText("p",post.body));
+  const actions=safeText("div","","post-actions"),like=safeText("button","♥ Helpful ("+(post.likes||0)+")"),commentToggle=safeText("button","Comments ("+(post.comments||[]).length+")");
+  like.type=commentToggle.type="button";like.addEventListener("click",()=>{post.likes=(post.likes||0)+1;persistPosts();renderCommunity()});
+  actions.append(like,commentToggle);card.append(actions);
+  const comments=safeText("div","","comments");(post.comments||[]).forEach(c=>{const line=safeText("div",c.author+": "+c.body,"comment");comments.append(line)});
+  const form=safeText("form","","comment-form"),name=document.createElement("input"),body=document.createElement("input"),send=safeText("button","Reply");
+  name.placeholder="Your name";name.maxLength=35;name.required=true;name.setAttribute("aria-label","Your name");
+  body.placeholder="Add a constructive reply…";body.maxLength=350;body.required=true;body.setAttribute("aria-label","Reply");
+  send.type="submit";form.append(name,body,send);form.addEventListener("submit",e=>{e.preventDefault();post.comments=post.comments||[];post.comments.push({author:name.value.trim(),body:body.value.trim()});persistPosts();renderCommunity()});
+  commentToggle.addEventListener("click",()=>{comments.hidden=!comments.hidden;form.hidden=!form.hidden});
+  comments.hidden=true;form.hidden=true;card.append(comments,form);feed.append(card);
+ });
+}
+$("postForm").addEventListener("submit",e=>{e.preventDefault();communityPosts.push({id:Date.now(),author:$("postAuthor").value.trim(),category:$("postCategory").value,title:$("postTitle").value.trim(),body:$("postBody").value.trim(),createdAt:new Date().toISOString(),likes:0,comments:[]});persistPosts();$("postForm").reset();renderCommunity()});
+$("communityFilter").addEventListener("change",renderCommunity);
+
+render();
+renderCommunity();
+</script></body></html>
